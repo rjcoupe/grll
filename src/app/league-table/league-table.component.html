@@ -1,0 +1,47 @@
+<section>
+    <h1>The Grand Rocket League League</h1>
+    <div class="league-table-container">
+        <table>
+            <tr>
+                <th class='team-name'>Team</th>
+                <th class='team-played'>Played</th>
+                <th class='team-wins'>Wins</th>
+                <th class='team-overtime-losses'>Overtime Losses</th>
+                <th class='team-normal-time-losses'>Losses</th>
+                <th class='team-forfeits'>Penalised</th>
+                <th class='team-goals-scored'>GS</th>
+                <th class='team-goals-conceded'>GC</th>
+                <th class='team-points'>Points</th>
+            </tr>
+            <tr *ngFor="let team of teams; let i = index;">
+                <td>
+                    {{ team.name }}<br />
+                </td>
+                <td>
+                    {{ team.gamesPlayed }}
+                </td>
+                <td>
+                    {{ team.wins }}
+                </td>
+                <td>
+                    {{ team.suddenDeathLosses }}
+                </td>
+                <td>
+                    {{ team.normalTimeLosses }}
+                </td>
+                <td>
+                    {{ team.penalties }}
+                </td>
+                <td>
+                    {{ team.goalsScored }}
+                </td>
+                <td>
+                    {{ team.goalsConceded }}
+                </td>
+                <td>
+                    {{ team.points }}
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>

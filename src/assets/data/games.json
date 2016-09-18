@@ -1,0 +1,31 @@
+{
+    "games": [{
+        "result": [{
+            "team": "Team 1",
+            "goals": 4
+        }, {
+            "team": "Team 2",
+            "goals": 2
+        }],
+        "wentToOvertime": false
+    }, {
+        "result": [{
+            "team": "Team 1",
+            "goals": 4
+        }, {
+            "team": "Team 3",
+            "goals": 5
+        }],
+        "wentToOvertime": true
+    }, {
+        "result": [{
+            "team": "Team 1",
+            "goals": 4
+        }, {
+            "team": "Team 2",
+            "goals": 2
+        }],
+        "wentToOvertime": false
+    }]
+
+}

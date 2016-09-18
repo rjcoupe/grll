@@ -1,0 +1,13 @@
+<h1>Rosters</h1>
+<section>
+    <div *ngFor="let team of teams" class="team-container">
+        <div class="team-name">{{ team.name }}</div>
+        <div class="team-members">
+            <ul>
+                <li *ngFor="let player of team['players']">
+                    {{ player }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

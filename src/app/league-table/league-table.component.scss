@@ -1,0 +1,51 @@
+section {
+    h1 {
+        font-family: 'Permanent Marker', cursive;
+        margin-top: 0;
+        width: 100%;
+        padding-top: 10vh;
+        padding-bottom: 25px;
+        color: #FFFFFF;
+        font-size: 9rem;
+        text-align: center;
+        text-shadow: -6px -6px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/images/background.jpg');
+    .league-table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        table {
+            border-collapse: collapse;
+            box-shadow: 2px 2px 2px #ccc;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.3rem;
+            td,
+            th {
+                text-align: center;
+            }
+            tr:first-child {
+                background-color: yellow;
+            }
+            tr:nth-child(2) {
+                border-bottom: 1px dashed #666;
+            }
+            tr:not(:first-child) {
+                background-color: rgb(219, 224, 194);
+                td:first-child, td:last-child {
+                    font-weight: bold;
+                }
+                td {
+                    padding: 20px;
+                }
+            }
+            th {
+                padding: 10px;
+                font-weight: normal;
+                padding: 1rem 5rem;
+            }
+        }
+    }
+}
