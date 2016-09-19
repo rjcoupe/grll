@@ -1,2 +1,12 @@
-<app-league-table [teams]="teams" [games]="games"></app-league-table>
-<app-rosters [teams]="teams"></app-rosters>
+<main *ngIf="teams.length > 0">
+    <app-league-table [teams]="teams" [games]="games"></app-league-table>
+    <app-rosters [teams]="teams"></app-rosters>
+</main>
+
+<main *ngIf="teams.length == 0">
+    <div class="no-draft">
+        <div class="message">
+            <h1>The draft takes place on September 22nd at midday (UTC).</h1>
+        </div>
+    </div>
+</main>
