@@ -5,6 +5,8 @@
     width: 100vw;
     height: 100vh;
     background-image: url('assets/images/background.jpg');
+    background-size: cover;
+    background-position: 0 100%;
 
     .message {
         background-color: rgba(0, 0, 0, 0.7);
