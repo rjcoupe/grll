@@ -4,13 +4,15 @@ import { Observable } from 'rxjs/Observable';
 
 import { Team } from './shared/team';
 
+import { environment } from '../environments/environment';
+
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class TeamService {
-  private _teamDataUrl = '/assets/data/teams.json';
+  private _teamDataUrl = environment['dataFiles']['teams'];
   public teams: Team[] = [];
 
   constructor(private http: Http) {}

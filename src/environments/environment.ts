@@ -5,6 +5,10 @@
 
 export const environment = {
   production: false,
+  dataFiles: {
+      games: '/assets/data/dev/games.json',
+      teams: '/assets/data/dev/teams.json'
+  },
   points: {
       win: 3,
       overtimeLoss: 1,

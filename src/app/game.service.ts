@@ -4,6 +4,8 @@ import { Observable } from 'rxjs/Observable';
 
 import { Game } from './shared/game';
 
+import { environment } from '../environments/environment';
+
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -11,7 +13,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class GameService {
-  private _gameDataUrl: string = '/assets/data/games.json';
+  private _gameDataUrl: string = environment['dataFiles']['games'];
 
   constructor(private http: Http) { }
 
