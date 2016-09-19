@@ -15,7 +15,7 @@ h1 {
 section {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
     .team-container {
         margin: 20px;
@@ -39,6 +39,10 @@ section {
                     list-style-type: none;
                     text-align: center;
                     font-size: 2rem;
+
+                    &.ringer {
+                        color: rgb(235, 199, 9);
+                    }
                 }
             }
             color: #FFFFFF;

@@ -8,10 +8,12 @@ import { Team } from '../shared/team';
 })
 export class RostersComponent implements OnInit {
   @Input() public teams: Team[] = [];
+  public sortedTeams: Team[];
   constructor() { }
 
   ngOnInit() {
-    this.teams.sort((a, b) => {
+    this.sortedTeams = Object.create(this.teams);
+    this.sortedTeams.sort((a, b) => {
         if (a.name < b.name) {
             return -1
         } else if (b.name > a.name) {

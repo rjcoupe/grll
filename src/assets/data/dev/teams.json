@@ -1,22 +1,69 @@
 {
-    "teams": [
-        {
-            "name": "Team 1",
-            "players": [
-                "Player 1"
-            ]
-        },
-        {
-            "name": "Team 2",
-            "players": [
-                "Player 2"
-            ]
-        },
-        {
-            "name": "Team 3",
-            "players": [
-                "Player 3"
-            ]
-        }
-    ]
+    "teams": [{
+        "name": "Team 1",
+        "players": [{
+            "name": "James Alfei",
+            "location": "uk"
+        }, {
+            "name": "Dave Hulihan",
+            "location": "us"
+        }, {
+            "name": "Rob Alcock",
+            "location": "uk"
+        }, {
+            "name": "Richard Coupe",
+            "location": "uk"
+        }]
+    }, {
+        "name": "Team 2",
+        "players": [{
+            "name": "Cameron Currey",
+            "location": "us"
+        }, {
+            "name": "Patrick Newcombe",
+            "location": "uk",
+            "ringer": true
+        }, {
+            "name": "Shuheng Li",
+            "location": "us"
+        }]
+    }, {
+        "name": "Team 3",
+        "players": [{
+            "name": "Matt Pearce",
+            "location": "uk"
+        }, {
+            "name": "Rich Hill",
+            "location": "us"
+        }, {
+            "name": "Andy Slade",
+            "location": "uk",
+            "ringer": true
+        }]
+    }, {
+        "name": "Team 4",
+        "players": [{
+            "name": "Will Chislett",
+            "location": "uk"
+        }, {
+            "name": "Rachel Sloan",
+            "location": "uk"
+        }, {
+            "name": "Thor-Magne Saevereid",
+            "location": "uk",
+            "ringer": true
+        }]
+    }, {
+        "name": "Team 5",
+        "players": [{
+            "name": "John Wells",
+            "location": "uk"
+        }, {
+            "name": "Ronan O'Connell",
+            "location": "uk"
+        }, {
+            "name": "Tom Turton",
+            "location": "uk"
+        }]
+    }]
 }

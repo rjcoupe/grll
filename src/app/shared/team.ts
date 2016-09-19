@@ -23,16 +23,12 @@ export class Team {
         this.name = name;
     }
 
-    private _retrieveGames() {
-        // Spoof game info for the time being
-        for (let i = 0; i < 12; i++) {
-            let g = new Game();
-        }
-    }
-
     determineGameResults(games: Game[]) {
         this.games = games;
         games.forEach((game) => {
+            if (!game.hasBeenPlayed) {
+                return;
+            }
             let teamFoundInGame: boolean = false;
             let thisTeamScored: number;
             let thisTeamConceded: number;

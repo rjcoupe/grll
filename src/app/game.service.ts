@@ -26,9 +26,8 @@ export class GameService {
     let body = response.json();
     let games: Game[] = [];
     for (let index in body['games']) {
-        let g = new Game();
-        g.result = body['games'][index]['result'];
-        g.wentToOvertime = body['games'][index]['wentToOvertime'];
+        let rawGame: any = body['games'][index];
+        let g = new Game(rawGame);
         games.push(g);
     }
     return games;
