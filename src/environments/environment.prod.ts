@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
   dataFiles: {
-      games: '/assets/data/games.json',
-      teams: '/assets/data/teams.json'
+      games: 'assets/data/games.json',
+      teams: 'assets/data/teams.json'
   },
   points: {
       win: 3,
