@@ -1,13 +1,13 @@
-<main *ngIf="teams.length > 0">
+<main *ngIf="teams && teams.length">
     <app-league-table [teams]="teams" [games]="games"></app-league-table>
     <app-rosters [teams]="teams"></app-rosters>
 </main>
 
-<main *ngIf="teams.length == 0">
+<main *ngIf="teams && teams.length == 0">
     <div class="no-draft">
         <div class="message">
-            <h1>Teams will be drafted on September 22nd at midday (UTC).</h1>
-            <p>After that time, team and league info will appear here.</p>
+            <h1>The draft takes place on September 22nd at 11am (UTC) / 12pm (BST) / 5am (MDT).</h1>
+            <p>Sign-ups made after this date will be allocated to random teams.</p>
         </div>
     </div>
 </main>

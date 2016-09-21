@@ -10,7 +10,7 @@ import { TeamService } from './team.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    public teams: Team[] = [];
+    public teams: Team[];
     public games: Game[] = [];
 
     constructor(private gameService: GameService, private teamService: TeamService) {}
@@ -26,6 +26,7 @@ export class AppComponent {
             .subscribe(
                 (games) => {
                     this.games = games;
+                    console.log(games);
                 }
             );
     }

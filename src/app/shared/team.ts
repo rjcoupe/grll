@@ -23,8 +23,9 @@ export class Team {
         this.name = name;
     }
 
-    determineGameResults(games: Game[]) {
+    determineLeagueStatistics(games: Game[]) {
         this.games = games;
+        this._resetStatistics();
         games.forEach((game) => {
             if (!game.hasBeenPlayed) {
                 return;
@@ -67,6 +68,15 @@ export class Team {
         });
         this.goalDifference = this.goalsScored - this.goalsConceded;
         this.points = this._calculatePoints();
+    }
+
+    private _resetStatistics() {
+        this.wins = 0;
+        this.suddenDeathLosses = 0;
+        this.normalTimeLosses = 0;
+        this.goalsScored = 0;
+        this.goalsConceded = 0;
+        this.goalDifference = 0;
     }
 
 

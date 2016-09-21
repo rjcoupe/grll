@@ -30,7 +30,7 @@ export class LeagueTableComponent implements OnInit, OnChanges {
 
     private _constructLeagueTable() {
         this.teams.forEach((team) => {
-            team.determineGameResults(this.games);
+            team.determineLeagueStatistics(this.games);
         });
         this.teams.sort(this._sortTeams);
     }

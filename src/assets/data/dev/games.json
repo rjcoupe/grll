@@ -6,9 +6,9 @@
             "goals": 4
         }, {
             "team": "Team 2",
-            "goals": 2
+            "goals": 5
         }],
-        "wentToOvertime": false
+        "wentToOvertime": true
     }, {
         "teams": [
             "Team 1",
@@ -16,6 +16,7 @@
         ],
         "date": "2016-09-19T10:20:33+00:00"
     }, {
+        "date": "2016-09-23",
         "result": [{
             "team": "Team 1",
             "goals": 4
